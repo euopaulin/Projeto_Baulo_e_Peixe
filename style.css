@@ -3,41 +3,110 @@
     src: url("fonts/hundo.ttf") format("truetype");
     font-weight: normal;
 }
+
+@font-face {
+    font-family: "unsans";
+    src: url("fonts/unsans.otf") format("truetype");
+    font-weight: bold;
+}
+
 @font-face {
     font-family: "vampirewars";
     src: url("fonts/vampirewars.otf") format("truetype");
     font-weight: bold;
 }
 
+@font-face {
+    font-family: "karaoke";
+    src: url("fonts/karaoke.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 5px #fc8d5a,
+      0 0 7px #fc8d5a,
+      0 0 15px #f5ad7c,
+      0 0 20px #f5ad7c;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow:
+      0 0 5px #fc8d5a,
+      0 0 13px #fc8d5a,
+      0 0 20px #f5ad7c,
+      0 0 30px #f5ad7c;
+  }
+}
+
 body {
-    background-color: rgba(12, 12, 12, 0.89);
+    background-color: rgba(12, 12, 12, 0.507);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .header {
-    background-color: #fc8210e7;
+    background-color: #000000c4;
     padding: 20px;
     text-align: center;
+    justify-content: center; 
 }
 
 .header h1 {
-    color: #ffffffec;
-    margin: 0;
-    width: 50%;
-    font-family: "vampirewars", sans-serif;
-    font-size: 3.5em;
-    box-shadow: 1px 1px 5px #fffffffd;
+    color: #ffffffd8;
+    width: 43%; /* Mantém a largura definida */
+    text-shadow: 1.3px 1.3px 3px #ffffff;
+    text-align: center; /* Centraliza o texto DENTRO do h1 */
+    font-family: "unsans", sans-serif;
+    font-size: 3.1em;
+    border-radius: 8px;
+    margin: 0 auto; /* ISSO VAI CENTRALIZAR O H1 HORIZONTALMENTE */
+}
+span {
+    color: #ff5100ec;
+    text-shadow: 2px 2px 4px #414141;
+    font-family: "hundo", sans-serif;
+    font-size: 1.3em;
     border-radius: 8px;
 }
 
-.header ul {
-    list-style-type: none;
+.lista ul {
+    display: flex;
+    justify-content: center;
     padding: 0;
+    font-family: "karaoke", sans-serif;
+    font-size: 1.5em;
+    color: #ffffffd8;
 }
 
-.header ul li {
+.lista ul li {
     display: inline;
     margin-right: 20px;
+    font-family: "karaoke", sans-serif;
+}
+
+.lista ul li a {
+  text-decoration: none;
+  color: #ffffffd8;
+  font-family: "karaoke", sans-serif;
+  font-size: 0.8em;
+  text-align: center; 
+  display: inline-block;
+  list-style-type: none;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+.lista ul li a:hover {
+  animation: pulse 2s; /* animação pulsando enquanto hover */
+  color:#f16b2cec;
 }
