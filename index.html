@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>bualas</p>
+    <div class="container">
+        <h1>Peixolas</h1>
+        <form id="calculator-form">
+            <label for="principal">Valor Principal (R$):</label>
+            <input type="number" id="principal" required>
+
+            <label for="rate">Taxa de Juros (%):</label>
+            <input type="number" id="rate" required>
+
+            <label for="time">Tempo (anos):</label>
+            <input type="number" id="time" required>
+
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="result"></div>
+    </div>
 </body>
 </html>
