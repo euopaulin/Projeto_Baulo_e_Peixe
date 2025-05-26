@@ -6,13 +6,13 @@
 
 @font-face {
     font-family: "unsans";
-    src: url("fonts/unsans.otf") format("truetype");
+    src: url("fonts/unsans.otf") format("opentype");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "vampirewars";
-    src: url("fonts/vampirewars.otf") format("truetype");
+    src: url("fonts/vampirewars.otf") format("opentype");
     font-weight: bold;
 }
 
@@ -32,10 +32,10 @@
   0%, 100% {
     transform: scale(1);
     box-shadow:
+      0 0 3px #fc8d5a,
       0 0 5px #fc8d5a,
-      0 0 7px #fc8d5a,
-      0 0 15px #f5ad7c,
-      0 0 20px #f5ad7c;
+      0 0 10px #f5ad7c,
+      0 0 15px #f5ad7c;
   }
   50% {
     transform: scale(1.1);
@@ -59,6 +59,7 @@ body {
     padding: 20px;
     text-align: center;
     justify-content: center; 
+    box-shadow: 1px 1px 10px #000000;
 }
 
 .header h1 {
@@ -67,10 +68,11 @@ body {
     text-shadow: 1.3px 1.3px 3px #ffffff;
     text-align: center; /* Centraliza o texto DENTRO do h1 */
     font-family: "unsans", sans-serif;
-    font-size: 3.1em;
+    font-size: 2.7em;
     border-radius: 8px;
-    margin: 0 auto; /* ISSO VAI CENTRALIZAR O H1 HORIZONTALMENTE */
+    margin: 0 auto
 }
+
 span {
     color: #ff5100ec;
     text-shadow: 2px 2px 4px #414141;
@@ -109,4 +111,29 @@ span {
 .lista ul li a:hover {
   animation: pulse 2s; /* animação pulsando enquanto hover */
   color:#f16b2cec;
+}
+
+/*Slide*/
+.slider {
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #000;
+  margin: 0 auto;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  transition: opacity 2s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  display: none;
+}
+
+.slide.active {
+  display: block;
 }

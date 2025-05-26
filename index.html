@@ -1,42 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<!--topo do site-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caixinhas Futebol Clube</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caixinhas Futebol Clube</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<!--cabeçalho-->
-<header>
-    <div class="header">
-            <h1><span>Caixinhas</span> Futebol Clube</h1>
-        <nav class="lista">
-            <ul>
-                <li><a href="#home">CAIXINHA TV</a></li>
-                <li><a href="#sobre">CAIXINHA STORE</a></li>
-                <li><a href="#contato">HISTÓRIA</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
 <body>
-    <div class="container">
-        <h1></h1>
-        <form id="calculator-form">
-            <label for="principal"></label>
-            <input type="number" id="principal" required>
-
-            <label for="rate">:</label>
-            <input type="number" id="rate" required>
-
-            <label for="time"></label>
-            <input type="number" id="time" required>
-
-            <button type="submit"></button>
-        </form>
-        <div id="result"></div>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="header">
+      <h1><span>Caixinhas
+      <br></span>Futebol Clube</h1>
+      <nav class="lista">
+        <ul>
+          <li><a href="#home">CAIXINHA TV</a></li>
+          <li><a href="#sobre">CAIXINHA STORE</a></li>
+          <li><a href="#contato">HISTÓRIA</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+  <!-- Slider automático -->
+  <section class="slider">
+    <img src="images/time1.png" alt="time1" class="slide active" />
+    <img src="images/time2.png" alt="time2" class="slide" />
+    <img src="images/time3.png" alt="time3" class="slide" />
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
