@@ -32,18 +32,11 @@
   0%, 100% {
     transform: scale(1);
     box-shadow:
-      0 0 5px #fc8d5a,
-      0 0 7px #fc8d5a,
-      0 0 15px #f5ad7c,
-      0 0 20px #f5ad7c;
+      0 0 5px transparent;
   }
   50% {
     transform: scale(1.1);
-    box-shadow:
-      0 0 5px #fc8d5a,
-      0 0 13px #fc8d5a,
-      0 0 20px #f5ad7c,
-      0 0 30px #f5ad7c;
+    box-shadow: transparent;
   }
 }
 
@@ -73,7 +66,7 @@ body {
 }
 span {
     color: #ff5100ec;
-    text-shadow: 2px 2px 4px #414141;
+    text-shadow: 2px 2px 2px #414141;
     font-family: "hundo", sans-serif;
     font-size: 1.3em;
     border-radius: 8px;
@@ -86,6 +79,7 @@ span {
     font-family: "karaoke", sans-serif;
     font-size: 1.5em;
     color: #ffffffd8;
+    background-color: ;
 }
 
 .lista ul li {
@@ -102,11 +96,23 @@ span {
   text-align: center; 
   display: inline-block;
   list-style-type: none;
-  border-radius: 15px;
+  border-radius: 7px;
   padding: 8px;
 }
 
 .lista ul li a:hover {
-  animation: pulse 2s; /* animação pulsando enquanto hover */
-  color:#f16b2cec;
+  animation: pulse 3s; /* animação pulsando enquanto hover */
+  color:#ffffffec;
+  background-color: #f16a2c6b;
+}
+
+footer {
+    background-color: #000000c4;
+    color: #ffffffd8;
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "Arial", sans-serif;
 }
